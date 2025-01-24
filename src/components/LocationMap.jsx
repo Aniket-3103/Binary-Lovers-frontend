@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 
-mapboxgl.accessToken = "pk.eyJ1IjoiYW5rdXNoaGgiLCJhIjoiY2x2eHBod2lvMDFyZTJrazBsejg1cTV2eSJ9._wgCTcP2HQJCibLlmFAYdg";
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;;
 
 const LocationMap = () => {
   const [map, setMap] = useState(null);
